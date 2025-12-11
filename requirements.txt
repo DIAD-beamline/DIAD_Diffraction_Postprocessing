@@ -1,0 +1,26 @@
+
+# ===== Core runtime requirements for DiffractionDataExplorer =====
+numpy==1.26.*
+scipy==1.11.*
+pandas==2.1.*
+matplotlib==3.8.*
+pillow==10.2.*
+h5py==3.10.*
+ipywidgets==8.1.*
+ipympl==0.9.3
+ipyfilechooser==0.6.*
+# Jupyter frontends (optional but recommended for `%matplotlib widget`)
+jupyterlab>=4.0
+notebook>=7.0
+
+# ===== CCDS/dev tools =====
+loguru==0.7.*
+mkdocs==1.5.*
+pip>=23.0
+pytest==8.3.*
+python-dotenv==1.0.*
+ruff==0.6.*
+tqdm==4.66.*
+typer==0.12.*
+# Editable install of your package (keep this at the bottom)
+-e .
