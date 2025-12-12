@@ -20,7 +20,7 @@ from matplotlib.widgets import RangeSlider
 
 class DiffractionDataExplorer:
     def __init__(self,  diff_path = None, img_path = None, out_path = None, proj_idx = None):
-        self.VisitPath = "/dls/k11/data"
+        self.VisitPath = os.getcwd()
         self.Dif_Path = diff_path
         self.Img_Path = img_path
         self.Out_Path = out_path
@@ -182,6 +182,8 @@ class DiffractionDataExplorer:
         path = self.Out_Path + "_img.tiff"
         img_fig[0].savefig(path, format='tiff')
 
+        plt.close(img_fig[0])
+
     def save_img_plot_all(self, event):
         self.save_img_plot(event, True)
     def save_img_plot_sel(self, event):
@@ -261,6 +263,8 @@ class DiffractionDataExplorer:
         self.update_diff_plot(dif_fig[1], legend)
         path = self.Out_Path + "_dif.tiff"
         dif_fig[0].savefig(path, format='tiff')
+
+        plt.close(dif_fig[0])
 
     def save_dif_plot_leg(self, event):
         self.save_dif_plot(event, True)
