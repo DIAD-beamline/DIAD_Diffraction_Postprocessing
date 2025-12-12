@@ -1,6 +1,3 @@
-# Data
-/data/
-
 # Mac OS-specific storage files
 .DS_Store
 
@@ -190,8 +187,3 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-# Heavy Datasets
-data/raw/mg12345/nexus/66350/**
-data/raw/mg12345/nexus/k11-66758/**
-data/raw/mg12345/processed/k11-66757_ascii/**
-data/raw/mg12345/processed/Savu_k11-66758_full_fd_rr_vo_AST_tiff/**
